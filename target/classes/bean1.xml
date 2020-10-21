@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+    <bean id="Pet1" class="com.spring.Pet" init-method="initMethod" destroy-method="destroyMethod"/>
+    <bean id="Owner1" class="com.spring.Owner"/>
+    <bean id="Customer1" class="com.spring.beans.Customer"/>
+    <bean id="CustomerDAO1" class="com.spring.beans.CustomerDAO">
+        <!-- <constructor-arg type="Pet" value="Pet"/> //Constructor argument type matching, this one create one new bean and set the name by the value -->
+       <constructor-arg ref="Pet1"/>  <!-- // Constructor argument resolution, ref use back the same bean we created above with the bean id -->
+        <!-- <constructor-arg name="pet" value="Cat"/> Constructor argument name, can set constructor parameter name directly with value-->
+    </bean>
+
+<!--    <bean id="CustomerDAO2" class="com.spring.beans.CustomerDAO">-->
+<!--        <property name="pet" ref="Pet1"/> &lt;!&ndash; here name is refer to setter based injection class set method parameter name &ndash;&gt;-->
+<!--    </bean>-->
+
+    <bean id="myBeanPost" class="com.spring.MyBeanPost"></bean>
+
+
+</beans>

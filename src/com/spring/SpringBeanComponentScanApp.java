@@ -8,6 +8,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 
+
 @SpringBootApplication // component scan can scan those class mark with any @Component, @Controller, @Service, @Repository as bean
 public class SpringBeanComponentScanApp {
 
@@ -15,10 +16,14 @@ public class SpringBeanComponentScanApp {
 
 
         ApplicationContext contextComponentScan = new AnnotationConfigApplicationContext(SpringBeanComponentScanApp.class);
-        Customer customer =  contextComponentScan.getBean(Customer.class);
+        Customer customer =  contextComponentScan.getBean("customer", Customer.class);
+
+        // be default, the bean name of the spring component class will be default to that class name with first letter smaller letter and the rest are the same,
+        // below example is CustomerDAO class, so bean name when created is customerDAO, the first letter become smaller.
+
         CustomerDAO customerDAO =  contextComponentScan.getBean("customerDAO",CustomerDAO.class);
         CustomerDAO customerDAO1 =  contextComponentScan.getBean("customerDAO",CustomerDAO.class);
-        Pet pet = contextComponentScan.getBean(Pet.class);
+        Pet pet = contextComponentScan.getBean("pet2Bean1",Pet.class);
         System.out.println("Get instantiate bean instance object");
 
         pet.setName("Dog");

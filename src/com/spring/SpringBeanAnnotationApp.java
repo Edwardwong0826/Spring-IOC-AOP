@@ -19,7 +19,7 @@ public class SpringBeanAnnotationApp {
 		//ApplicationContext context2 = new AnnotationConfigApplicationContext(SpringConfig2.class);
 
 		Pet pet1 = (Pet) context.getBean("pet1Bean");
-		Pet pet2 = (Pet) context.getBean("pet2Bean");
+		Pet pet2 = (Pet) context.getBean("pet2Bean1");
 		//CustomerDAO customerDAO =  (CustomerDAO)context.getBean("getCustomerDAO"); // is the same as above, not sure why, confuse
 		
 		System.out.println(pet1.getName());  

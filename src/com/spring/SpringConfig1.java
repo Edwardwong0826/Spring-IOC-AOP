@@ -1,12 +1,13 @@
 package com.spring;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
 
 import java.util.ArrayList;
 import java.util.List;
 
-
+@Configuration
 public class SpringConfig1 {
 	
 	@Bean
@@ -17,8 +18,10 @@ public class SpringConfig1 {
 		pet.setName("Daisy");   
 		return pet; 
 	} 
-		  
-    @Bean
+
+	//@Bean register a bean into IOC container, type is the return type of method, and the id is default to use method name
+	// if we dont have use method name as id, we can enter value to define the bean name and use that as id
+    @Bean(value = "pet2Bean1")
     public Pet pet2Bean()
 	{  
 		return new Pet("Lola"); 

@@ -2,7 +2,9 @@ package com.spring.beans;
 
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
+import org.springframework.stereotype.Component;
 
+@Component("oldCustomer")
 public class CustomerOld implements InitializingBean, DisposableBean {
 
 	

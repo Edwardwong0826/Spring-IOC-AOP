@@ -13,7 +13,7 @@ public class SpringBeanXMLApp {
         // FactoryBean context = new ClassPathXmlApplicationContext("bean1.xml");;
 
         // Spring bean managed by Spring IOC based on the XML or Java configuration. The Spring beans creation, management,
-        //        // and disposal handled by the Spring IoC. At a high-level Spring Bean pass through a different life cycle.
+        // and disposal handled by the Spring IoC. At a high-level Spring Bean pass through a different life cycle.
 
         //  -Execute no args constructor instantiate bean instance
         //  -Populate properties: Spring IoC container injects the bean’s properties.

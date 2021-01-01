@@ -1,11 +1,16 @@
 package com.spring.configs;
 
 import com.spring.beans.CustomerOld;
+import com.spring.beans.Person;
+import com.spring.conditional.LinuxCondition;
+import com.spring.conditional.WindowsCondition;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Conditional;
 import org.springframework.context.annotation.Configuration;
 
 
-@Configuration // if this dont have @configuration, at Owener class cannot autowired the getCustomerBean1 bean
+//@Conditional({LinuxCondition.class}) // if put on class, then the entire class bean only will register if the conditional is true
+@Configuration // if this don't have @configuration, at Owner class cannot autowired the getCustomerBean1 bean
 public class SpringConfig2 {
 	
     @Bean
@@ -25,6 +30,24 @@ public class SpringConfig2 {
 
     	return c;
 
+    }
+
+    /**
+     * @Conditional can based on condition to determine, if true then register the bean into IOC container
+     * example if system is windows, then add Bill to container
+     * if system is linus, then add Linus to container
+     */
+    @Conditional({WindowsCondition.class})
+    @Bean("Bill")
+    public Person person(){
+        System.out.println("Add Person into IOC container");
+        return new Person("Bill Gates",64);
+    }
+
+    @Conditional({LinuxCondition.class})
+    @Bean("Linus")
+    public Person person1(){
+        return new Person("Linus",49);
     }
     
     

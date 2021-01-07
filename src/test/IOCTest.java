@@ -22,6 +22,14 @@ public class IOCTest {
         printBeans(applicationContext);
         Blue bean = applicationContext.getBean(Blue.class);
         System.out.println(bean);
+
+        //FactoryBean get by getObject instantiate object, it will return proxy object color
+        Object colorFactoryBean = applicationContext.getBean("colorFactoryBean");
+        // if we want to get the FactoryBean itself, we can add & to get it
+        Object colorFactoryBean1 = applicationContext.getBean("&colorFactoryBean");
+
+        System.out.println("Bean type: " +colorFactoryBean.getClass());
+        System.out.println("Bean type: " +colorFactoryBean1.getClass());
     }
 
     @Test

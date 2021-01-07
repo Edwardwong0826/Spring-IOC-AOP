@@ -6,7 +6,8 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-
+    <!-- in xml this is how to import outside config file value to beans-->
+    <context:property-placeholder location="classpath:person.properties"/>
     <bean id="Pet1" class="com.spring.Pet" init-method="initMethod" destroy-method="destroyMethod"/>
     <bean id="Owner1" class="com.spring.Owner"/>
     <bean id="Customer1" class="com.spring.beans.Customer"/>

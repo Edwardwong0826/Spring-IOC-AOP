@@ -1,0 +1,8 @@
+
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Ò¢£üÿÿÿÿ
+M	java:S106*"9Replace this use of System.out or System.err by a logger.(¿é”
+N	java:S106 "9Replace this use of System.out or System.err by a logger.(¬¹†
+N	java:S106"9Replace this use of System.out or System.err by a logger.(œİ–Ë
+S	java:S106)"9Replace this use of System.out or System.err by a logger.(Ã•Ñëıÿÿÿÿ
+l
+java:S1128	"QRemove this unused import 'org.springframework.context.annotation.ComponentScan'.(æëòÒûÿÿÿÿ

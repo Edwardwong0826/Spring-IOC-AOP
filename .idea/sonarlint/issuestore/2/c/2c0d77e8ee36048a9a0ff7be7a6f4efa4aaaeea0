@@ -1,0 +1,12 @@
+
+_
+java:S1128
+"DRemove this unused import 'com.spring.conditional.WindowsCondition'.(†Ğœüÿÿÿÿ
+O
+java:S1128"4Remove this unused import 'com.spring.beans.Person'.(Ôë›¤ÿÿÿÿÿ
+c	java:S100+"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…™Ğ
+j
+java:S1128"ORemove this unused import 'org.springframework.context.annotation.Conditional'.(Óç»®úÿÿÿÿ
+X
+java:S1128"BRemove this unused import 'com.spring.conditional.LinuxCondition'.(ìÕŸ„
+h	java:S1002"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øØäùÿÿÿÿ

@@ -1,0 +1,6 @@
+
+Z	java:S106""9Replace this use of System.out or System.err by a logger.(Δ¶Ρμϋÿÿÿÿ8”Ίªήν.
+
+java:S1130&"sRemove the declaration of thrown exception 'org.springframework.beans.BeansException' which is a runtime exception.(―¶…8¤ξ.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ύ„±Ρϋÿÿÿÿ8”Ίªήν.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ιγ„ϋÿÿÿÿ8©ήν.

@@ -1,7 +1,6 @@
 package test;
 
 import com.spring.AOP.Annotation.User;
-import com.spring.AOP.Annotation.UserProxy;
 import com.spring.configs.SpringConfigOfAOP;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

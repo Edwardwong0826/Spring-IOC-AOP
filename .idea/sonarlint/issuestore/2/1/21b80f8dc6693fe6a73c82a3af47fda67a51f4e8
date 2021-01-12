@@ -1,10 +1,10 @@
 
-U	java:S106"9Replace this use of System.out or System.err by a logger.(°õ¤Æ8ŠºÀŠî.
-ƒ
-java:S1450"aRemove the "applicationContext" field and declare it as a local variable in the relevant methods.(î‡²şÿÿÿÿ8Ú÷³Šî.
-
-java:S1130"sRemove the declaration of thrown exception 'org.springframework.beans.BeansException' which is a runtime exception.(¯¶…œ8¬×¯Šî.
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(ÙÔŠ¥üÿÿÿÿ8Ú÷³Šî.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ùÆÀúÿÿÿÿ8§±·Šî.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(°õ¤Æ8ŠºÀŠî.
 X
-java:S1068"6Remove this unused "applicationContext" private field.(î‡²şÿÿÿÿ8‹ª³Šî.
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(ùÆÀúÿÿÿÿ8§±·Šî.
+java:S1068"6Remove this unused "applicationContext" private field.(î‡²şÿÿÿÿ8‹ª³Šî.
+ƒ
+java:S1450"aRemove the "applicationContext" field and declare it as a local variable in the relevant methods.(î‡²şÿÿÿÿ8Ú÷³Šî.
+
+java:S1130"sRemove the declaration of thrown exception 'org.springframework.beans.BeansException' which is a runtime exception.(¯¶…œ8¬×¯Šî.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ÙÔŠ¥üÿÿÿÿ8Ú÷³Šî.

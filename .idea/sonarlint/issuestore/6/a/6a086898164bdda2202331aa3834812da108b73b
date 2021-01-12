@@ -1,17 +1,17 @@
 
-J
-java:S1481$"/Remove this unused "definition" local variable.(Óíæ üÿÿÿÿ
-E
-java:S1481"0Remove this unused "beanFactory" local variable.(‘”Æ
-a
-java:S2259%"FA "NullPointerException" could be thrown; "property" is nullable here.(Êè‰Ùýÿÿÿÿ
-K
-java:S1481"0Remove this unused "classLoader" local variable.(Èøµÿÿÿÿÿ
-T
-java:S1854"?Remove this useless assignment to local variable "beanFactory".(‘”Æ
 \
 java:S1126%"AReplace this if-then-else statement by a single return statement.(Êè‰Ùýÿÿÿÿ
-Y
-java:S1854$">Remove this useless assignment to local variable "definition".(Óíæ üÿÿÿÿ
+E
+java:S1481"0Remove this unused "beanFactory" local variable.(‘”Æ
+T
+java:S1854"?Remove this useless assignment to local variable "beanFactory".(‘”Æ
+J
+java:S1481$"/Remove this unused "definition" local variable.(Óíæ üÿÿÿÿ
 Z
 java:S1854"?Remove this useless assignment to local variable "classLoader".(Èøµÿÿÿÿÿ
+K
+java:S1481"0Remove this unused "classLoader" local variable.(Èøµÿÿÿÿÿ
+Y
+java:S1854$">Remove this useless assignment to local variable "definition".(Óíæ üÿÿÿÿ
+a
+java:S2259%"FA "NullPointerException" could be thrown; "property" is nullable here.(Êè‰Ùýÿÿÿÿ

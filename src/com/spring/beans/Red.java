@@ -11,6 +11,7 @@ import org.springframework.util.StringValueResolver;
 @Component
 public class Red implements ApplicationContextAware, BeanNameAware, EmbeddedValueResolverAware
 {
+
     private ApplicationContext applicationContext;
 
     @Override

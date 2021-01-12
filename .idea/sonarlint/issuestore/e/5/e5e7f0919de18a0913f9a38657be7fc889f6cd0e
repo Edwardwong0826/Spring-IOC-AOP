@@ -1,13 +1,16 @@
 
-g	java:S112#"FDefine and throw a dedicated exception instead of using a generic one.(ºÉ«öıÿÿÿÿ8‡§Â‹î.
-x
-java:S1192("VDefine a constant instead of duplicating this literal "com.mysql.jdbc.Driver" 3 times.(Ùµ‹Şøÿÿÿÿ8ıÍÄ‹î.
-b	java:S112@"FDefine and throw a dedicated exception instead of using a generic one.(ñ¬Õ¨8ıÍÄ‹î.
-
-java:S41445"]Update this method so that its implementation is not identical to "dataSourceDev" on line 35.(¿ç—üÿÿÿÿ8Ú¶Ô‹î.
 |
-java:S1192'"ZDefine a constant instead of duplicating this literal "jdbc://localhost:3306/tet" 3 times.(ˆ¥ïóûÿÿÿÿ8ıÍÄ‹î.
+java:S1192("ZDefine a constant instead of duplicating this literal "jdbc://localhost:3306/tet" 3 times.(ˆ¥ïóûÿÿÿÿ8ıÍÄ‹î.
+k	java:S116"ORename this field "User" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼üøË8“ëÏ‹î.
+b	java:S112A"FDefine and throw a dedicated exception instead of using a generic one.(ñ¬Õ¨8ıÍÄ‹î.
+x
+java:S1192)"VDefine a constant instead of duplicating this literal "com.mysql.jdbc.Driver" 3 times.(Ùµ‹Şøÿÿÿÿ8ıÍÄ‹î.
+
+java:S41446"]Update this method so that its implementation is not identical to "dataSourceDev" on line 36.(¿ç—üÿÿÿÿ8Ú¶Ô‹î.
+g	java:S1126"FDefine and throw a dedicated exception instead of using a generic one.(¿ç—üÿÿÿÿ8µÛÃ‹î.
+}
+java:S1128
+"[Remove this unused import 'org.springframework.context.support.AbstractApplicationContext'.(‘í½ûÿÿÿÿ8”Ãîúî.
+g	java:S112$"FDefine and throw a dedicated exception instead of using a generic one.(ºÉ«öıÿÿÿÿ8‡§Â‹î.
 z
-java:S4144@"]Update this method so that its implementation is not identical to "dataSourceDev" on line 35.(ñ¬Õ¨8ôúÔ‹î.
-g	java:S1125"FDefine and throw a dedicated exception instead of using a generic one.(¿ç—üÿÿÿÿ8µÛÃ‹î.
-k	java:S116"ORename this field "User" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼üøË8“ëÏ‹î.
+java:S4144A"]Update this method so that its implementation is not identical to "dataSourceDev" on line 36.(ñ¬Õ¨8ôúÔ‹î.

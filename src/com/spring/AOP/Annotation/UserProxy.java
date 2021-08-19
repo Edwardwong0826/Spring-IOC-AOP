@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
  *   - need to add AOP class and logic class to IOC container
  *   - need to tell spring which class is aspect class , add @Aspect to indicate the class is aspect class
  *   - in aspect class method mark advice annotation, to tell spring when to invoke AOP (by pointcut expression)
- *   - add @EnableAspectJAutoProxy in @Configuration class, to activate AOP annotation based
+ *   - add @EnableAspectJAutoProxy in @Configuration class or together with @SpingBootApplication main class, to activate AOP annotation based 
  */
 //Aspect is the proxy class for advice
 @Component

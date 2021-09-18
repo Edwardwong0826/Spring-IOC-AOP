@@ -16,7 +16,7 @@ public class CustomerDAO {
 	private int integer;
 
 	// the @Autowired is dependency injection by the type, so one type of class no problem, if multiple class implements or extends the class
-	// it will not know which class bean to select, @Qualifier can solved that, it dependency injection by the bean name, must use with @Autowired
+	// it will not know which class bean to select, @Qualifier can solve that, it dependency injection by the bean name, must use with @Autowired
 	// together
 	@Autowired
 	//@Qualifier(value = "xxxx") // @Qualifies is dependency injection by name , like

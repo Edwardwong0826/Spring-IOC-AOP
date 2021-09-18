@@ -3,6 +3,7 @@ package com.spring;
 import com.spring.AOP.Annotation.User;
 import com.spring.beans.Customer;
 import com.spring.beans.CustomerDAO;
+import com.spring.beans.CustomerOld;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -25,7 +26,6 @@ public class SpringBeanComponentScanApp {
         CustomerDAO customerDAO1 =  contextComponentScan.getBean("customerDAO",CustomerDAO.class);
         Pet pet = contextComponentScan.getBean("pet2Bean1",Pet.class);
         System.out.println("Get instantiate bean instance object");
-
         pet.setName("Dog");
 
         System.out.println(customer.getName());
@@ -38,7 +38,7 @@ public class SpringBeanComponentScanApp {
         // -session
         // -application
         // -websocket
-        System.out.println(customerDAO.getClass() + ":" + customerDAO.hashCode());
+        System.out.println(customerDAO.getClass() + ":" + customerDAO.hashCode()); //customerDAO we set scope to prototype so will have new object
         System.out.println(customerDAO1.getClass() + ":" + customerDAO1.hashCode());
 
         // Aop advice before

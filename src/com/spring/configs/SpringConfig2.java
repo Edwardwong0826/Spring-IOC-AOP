@@ -1,9 +1,6 @@
 package com.spring.configs;
 
-import com.spring.beans.Color;
-import com.spring.beans.CustomerOld;
-import com.spring.beans.Person;
-import com.spring.beans.Red;
+import com.spring.beans.*;
 import com.spring.conditional.LinuxCondition;
 import com.spring.conditional.MyBeanDefinitionRegistrar;
 import com.spring.conditional.MyImportSelector;
@@ -17,7 +14,7 @@ import org.springframework.context.annotation.Import;
 
 @Configuration // if this don't have @configuration, at Owner class cannot autowired the getCustomerBean1 bean
 // import the class to IOC, default id is full class name
-@Import({Color.class, Red.class, MyImportSelector.class, MyBeanDefinitionRegistrar.class})
+@Import({Color.class, Red.class, Car.class, MyImportSelector.class, MyBeanDefinitionRegistrar.class})
 public class SpringConfig2 {
 	
     @Bean

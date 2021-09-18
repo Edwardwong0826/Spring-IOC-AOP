@@ -15,14 +15,14 @@ import org.springframework.context.annotation.Import;
 
 
 @Configuration
-// import the class to IOC, default id is full class name
+// import the class to IOC, default bean id is full class name with first letter smaller
 @Import({Color.class, Red.class, MyImportSelector.class, MyBeanDefinitionRegistrar.class})
 public class SpringConfig3 {
 
 
     /**
-     * @Conditional can based on condition to determine, if true then register the bean into IOC container
-     * example if system is windows, then add Bill to containe
+     * @Conditional can be based on condition to determine, if true then register the bean into IOC container
+     * example if system is windows, then add Bill to container
      * if system is linus, then add Linus to container
      */
     @Conditional({WindowsCondition.class})
@@ -50,7 +50,7 @@ public class SpringConfig3 {
      *  1. @ComponentScan + annotation (@Controller/@Service/@Repository/@Component) - this is 被动 add to IOC
      *  2. @Bean - import third party class
      *  3. @Import - quickly import class to IOC container
-     *     1. @Import - this is we 主动 add to IOC container, if the class or third party class didn't add @Controller, @Service those cannot be scan by @ComponentScan etc
+     *     1. @Import - this is we 主动 add to IOC container, if the class or third party class didn't add @Controller, @Service those cannot be scanned by @ComponentScan etc
      *     2. ImportSelector -  return needed import classes all class name string
      *     3. ImportBeanDefinitionRegistrar - manual register bean to IOC container
      *  4. use spring provided FactoryBean

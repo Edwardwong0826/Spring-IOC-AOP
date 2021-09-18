@@ -11,10 +11,10 @@ import org.springframework.context.annotation.Configuration;
  *      singleton bean: when IOC container is created then instantiate object
  *      multi instance bean: every time when get or request instantiate object
  *  initialization
- *      when object is instantiate and assign value to fields/property called initMethod
+ *      when object is instantiate and assign value to field/property called initMethod
  *  destroy
  *      singleton bean: when IOC container is closed, the singleton bean called the destroyMethod
- *      multi instance bean: does not called destroyMethod, need our self to handle it, the IOC Container will not handle this
+ *      multi instance bean: does not call destroyMethod, need our self to handle it, the IOC Container will not handle this
  *                           kind of bean
  *
  * BeanPostProcessor principle

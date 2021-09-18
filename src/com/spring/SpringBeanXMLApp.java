@@ -8,7 +8,7 @@ public class SpringBeanXMLApp {
 
     public static void main(String[] args)
     {
-        // below are two IOC container interface class that use to get the xml beans, but normally we use the ApplicationContext,
+        // below are two IOC container interface class that used to get the xml beans, but normally we use the ApplicationContext,
         // the FactoryBean are more basic that not recommended use, ApplicationContext will have more features
         // FactoryBean context = new ClassPathXmlApplicationContext("bean1.xml");;
 
@@ -26,6 +26,8 @@ public class SpringBeanXMLApp {
         Pet pet = context.getBean("Pet1",Pet.class);
         pet.setName("First");
         System.out.println(pet);
+
+
 
         CustomerDAO customer = context.getBean("CustomerDAO1",CustomerDAO.class); // this is constructor injection based
         //CustomerDAO customer2 = context.getBean("CustomerDAO2",CustomerDAO.class); // this setter based injection based

@@ -6,6 +6,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class Color {
 
+
     private Car car;
 
     public Car getCar() {

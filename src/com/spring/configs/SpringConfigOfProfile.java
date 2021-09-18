@@ -18,7 +18,7 @@ import javax.sql.DataSource;
  *     switch prod, test environment
  *     data source: A/B/C
  *
- *     1. once add @Profile bean, only the environment activate will be register,
+ *     1. once add @Profile bean, only the environment activate will be registered,
  *     2. when add in class, class  will be loaded based on environment and inside @profile can activate
  *     3. those bean without @Profile in all time is loaded and register
  */

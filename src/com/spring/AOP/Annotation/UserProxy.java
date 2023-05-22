@@ -8,8 +8,13 @@ import org.springframework.stereotype.Component;
 
 /**
  *  AOP
+ *   - Spring has two ways of doing AOP, if the class implements an interface it can use a standard JDK Proxy,
+ *     if the class does not implement an interface it will create a new subclass by using CGLib
+ *     https://stackoverflow.com/questions/10664182/what-is-the-difference-between-jdk-dynamic-proxy-and-cglib
+ *     https://stackoverflow.com/questions/42411642/why-can-not-get-annotation-from-beanclass
+ *   - CGLib proxy created by Spring will be formatted like <target class>$$EnhancerBySpringCGLIB$$<hex string>
  *   - need to add AOP class and logic class to IOC container
- *   - need to tell spring which class is aspect class , add @Aspect to indicate the class is aspect class
+ *   - need to tell spring which class is aspect class, add @Aspect to indicate the class is aspect class
  *   - in aspect class method mark advice annotation, to tell spring when to invoke AOP (by pointcut expression)
  *   - add @EnableAspectJAutoProxy in @Configuration class or together with @SpingBootApplication main class, to activate AOP annotation based 
  */

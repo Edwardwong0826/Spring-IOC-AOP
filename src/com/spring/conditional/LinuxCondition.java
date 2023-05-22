@@ -7,7 +7,7 @@ import org.springframework.context.annotation.ConditionContext;
 import org.springframework.core.env.Environment;
 import org.springframework.core.type.AnnotatedTypeMetadata;
 
-// determine is it linux OS, conditional need to implements Condition interface
+// determine is it linux OS, conditional need to implement Condition interface
 public class LinuxCondition implements Condition {
 
     /**

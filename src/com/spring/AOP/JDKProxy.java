@@ -8,6 +8,9 @@ import java.util.Arrays;
 
 public class JDKProxy {
 
+    // JDK Dynamic Proxy requires target class implement an interface, so that proxy class can be created by jdk using JDK reflection API
+    // https://stackoverflow.com/questions/10664182/what-is-the-difference-between-jdk-dynamic-proxy-and-cglib
+    // https://stackoverflow.com/questions/42411642/why-can-not-get-annotation-from-beanclass
     public static void main(String[] args) {
 
         Class[] interfaces = {UserDAO.class};
